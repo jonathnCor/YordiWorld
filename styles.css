@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+/* Simple reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    background-image: url("bg.gif");
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .wrapper {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 50px; /* Footer height */
+  }
+  
+  header {
+    
+    color: #e2eafc;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .video iframe, .large-video iframe {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16 / 9;
+  }
+  
+  .text, .image {
+    background-color: rgba(238, 238, 255, 0.0);
+  }
+  
+  .text {
+    grid-column: span 6;
+    
+  }
+  
+  .large-video {
+    grid-column: span 12;
+  }
+  
+  .image {
+    grid-column: span 4;
+  }
+  
+  .video {
+    grid-column: span 4;
+  }
+  
+  footer {
+    background-color: #3c3c3c;
+    color: #e2eafc;
+    text-align: center;
+    padding: 10px 0;
+    
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .text, .video, .large-video, .image {
+      grid-column: span 12;
+    }
+  }
+  
+  .text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; /* Large text size */
+    font-weight: 700; /* Bold font weight */
+    color: #000; /* You can choose any color you want */
+    background-color: rgba(238, 238, 255, 0.5
+    ); /* Background color for the text area */
+    padding: 20px; /* Padding inside the text containers */
+    grid-column: span 6; /* Adjust as needed for your layout */
+  }
+  
